@@ -1,3 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BOX: PRODUCTOS</title>
+    <link rel="shortcut icon" href="../assets/imagenes/EBOXGIMP.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <script defer src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/miCSS/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/imagenes/EBOXGIMP.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                E-BOX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">
+                            <i class="fa-solid fa-box"></i>
+                            Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Carrito <span class="badge text-bg-danger">4</span></a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">
+                            <i class="fas fa-envelope"></i>
+                            Contacto</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN DEL HEADER -->
+    <!-- CONTENEDOR PRODUCTOS Y FILTROS: -->
+    <div class="container mt-4">
+        <!-- FILTROS: -->
+        <div class="row mb-5">
+
+            <div class="col-12 textos">
+                <h2>Nuestros Productos</h2>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-around">
+                <label class="form-check-label form-check col-12 col-md-4 col-lg-2 mb-2 mx-3" for="filtroCategoria">
+                    <input class="form-check-input" type="checkbox" value="" id="filtroCategoria">
+                    Categoría
+                </label>
+                <label class="form-check-label form-check col-12 col-md-4 col-lg-2 mb-2 mx-3" for="filtroPrecio">
+                    <input class="form-check-input" type="checkbox" value="" id="filtroPrecio">
+                    Precio
+                </label>
+                <label class="form-check-label form-check col-12 col-md-4 col-lg-2 mb-2 mx-3" for="filtroFecha">
+                    <input class="form-check-input" type="checkbox" value="" id="filtroFecha">
+                    Fecha
+                </label>
+                <label class="form-check-label form-check col-12 col-md-4 col-lg-2 mb-2 mx-3" for="filtroValoracion">
+                    <input class="form-check-input" type="checkbox" value="" id="filtroValoracion">
+                    Valoración del Producto
+                </label>
+                <label class="form-check-label form-check col-12 col-md-4 col-lg-2 mb-2 mx-3"
+                    for="filtroDisponibilidad">
+                    <input class="form-check-input" type="checkbox" value="" id="filtroDisponibilidad">
+                    Disponibilidad
+                </label>
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Buscar productos...">
+                    <button class="btn btn-outline-success" type="button">Buscar</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN DE FILTROS: -->
+        <!-- PAGINACIÓN: -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN DE PAGINACIÓN: -->
+        <!-- PRODUCTOS: -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 1"> -->
+                    <figure>
+                        <img src="../assets/imagenes/monitor.jpg" alt="Monitor de PC"
+                            title="Un monitor para pc de sobremesa" class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Monitor de 32"</h5>
+                        <p class="cart-item-description">Un monitor con una gran calidad.</p>
+                        <p class="cart-item-description">Tecnología</p>
+                        <p class="cart-item-price">Precio: 150.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/patinete.jpg" alt="Patinete" title="Patinete deportivo"
+                            class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Patinete deportivo</h5>
+                        <p class="cart-item-description">Haz deporte mientras te diviertes.</p>
+                        <p class="cart-item-description">Deportes</p>
+                        <p class="cart-item-price">Precio: 500.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/periferico1.jpg" alt="Volante para juegos"
+                            title="Periférico para juegos de conducción" class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Volante para juegos</h5>
+                        <p class="cart-item-description">Incluye el volante, la palanca de cambios y los pedales.</p>
+                        <p class="cart-item-description">Juegos</p>
+                        <p class="cart-item-price">Precio: 150.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/periferico2.jpg" alt="Soporte para volantes"
+                            title="Periférico para juegos de conducción" class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Soporte para volantes</h5>
+                        <p class="cart-item-description">Una estructura fuerte donde poner tu volante.</p>
+                        <p class="cart-item-description">Juegos</p>
+                        <p class="cart-item-price">Precio: 430.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/robot.jpg" alt="Robot de cocina"
+                            title="Un robot para ayudar en las recetas." class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Robot limpiador</h5>
+                        <p class="cart-item-description">Barre, friega, quita el polvo, etc.</p>
+                        <p class="cart-item-description">Hogar</p>
+                        <p class="cart-item-price">Precio: 369.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/sobremesa.jpg" alt="Torre de sobremesa"
+                            title="Una caja ideal para tu ordenador" class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Ordenador de sobremesa</h5>
+                        <p class="cart-item-description">Un ordenador con las últimas novedades.</p>
+                        <p class="cart-item-description">Tecnología</p>
+                        <p class="cart-item-price">Precio: 1390.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/tablet.jpg" alt="Tablet"
+                            title="Una tablet ligera y potente que incluye teclado" class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Tablet</h5>
+                        <p class="cart-item-description">Una poderosa tablet muy ligera.</p>
+                        <p class="cart-item-description">Tecnología</p>
+                        <p class="cart-item-price">Precio: 620.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <!-- <img src="../assets/imagenes/saitama.jpg" class="card-img-top" alt="Producto 2"> -->
+                    <figure>
+                        <img src="../assets/imagenes/cafetera.jpg" alt="Cafetera" title="Tu café siempre listo"
+                            class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="cart-item-title">Cafetera eléctrica</h5>
+                        <p class="cart-item-description">Prepara tus cafés rápidamente.</p>
+                        <p class="cart-item-description">Hogar</p>
+                        <p class="cart-item-price">Precio: 150.00&euro;</p>
+                        <a href="./detallesProducto.html" class="btn btn-primary">Ver detalles del producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN DE PRODUCTOS: -->
+        <!-- PAGINACIÓN: -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN DE PAGINACIÓN: -->
+    </div>
+    <!-- FIN DEL CONTENEDOR DE PRODUCOS, FILTROS Y PAGINACIÓN: -->
+    <!-- FOOTER -->
+    <footer class="miFooter" style="text-align: center; margin-top: 50px; ">
+        <p>
+            Este contenido está licenciado bajo una
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional
+            </a>.
+        </p>
+        <p>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                rel="cc:attributionURL" href="index.html">E-BOX</a> por <a rel="cc:attributionURL dct:creator"
+                property="cc:attributionName" href="http://localhost/miPerfil">Joaquín</a> bajo licencia <a
+                href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+        </p>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -7,12 +337,8 @@
 
 
 <!-- DEMOMENTO PONGO AQUÍ LAS CARDS PARA NO PERDERLAS -->
-
-
-
-
 <!-- CARDS -->
-<div class="container-fluid container-lg mt-5">
+<!-- <div class="container-fluid container-lg mt-5">
     <div class="row">
         <div class="col-12 textos">
             <h2>Productos</h2>
@@ -48,4 +374,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

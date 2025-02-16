@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-BOX</title>
+    <title>E-BOX: INICIO</title>
     <link rel="shortcut icon" href="assets/imagenes/EBOXGIMP.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <script defer src="assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -31,6 +31,11 @@
                         <a class="nav-link active" aria-current="page" href="./index.html">
                             <i class="fa-solid fa-house"></i>
                             Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vistas/productos.html">
+                            <i class="fa-solid fa-box"></i>
+                            Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./vistas/carrito.html">
@@ -70,7 +75,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/imagenes/one_punch_man-wallpaper-1280x720.jpg" class="d-block w-100" alt="...">
+                <img src="assets/imagenes/1.jpg" class="d-block w-100" alt="...">
                 <!-- d-none d-md-block -->
                 <div class="carousel-caption">
                     <h5>Calidad Inigualable</h5>
@@ -78,14 +83,14 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/imagenes/saitama-mighty-fist.jpg" class="d-block w-100" alt="...">
+                <img src="assets/imagenes/2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>Servicio Confiable</h5>
                     <p>Confía en nosotros para ofrecerte lo mejor. Tu satisfacción es nuestra prioridad.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/imagenes/saitama.jpg" class="d-block w-100" alt="...">
+                <img src="assets/imagenes/3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>Innovación Constante</h5>
                     <p>Siempre a la vanguardia. Innovación que transforma tu experiencia de compra.</p>
@@ -105,14 +110,21 @@
     </div>
     <!-- FIN DEL CARROUSEL -->
     <!-- CARDS -->
-    <div class="container-fluid container-lg mt-5">
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 textos">
                 <h2>Productos</h2>
             </div>
             <div class="col-8 just">
                 <div class="card mb-3">
-                    <img src="assets/imagenes/saitama.jpg" class="card-img-top" alt="Image 1">
+                    <!-- <img src="assets/imagenes/monitor.jpg" class="card-img-top" alt="Image 1"> -->
+                    <figure>
+                        <img src="assets/imagenes/monitor.jpg" alt="Monitor de PC" title="titulo"
+                            class="card-img-top imagen">
+                        <figcaption>
+                            Imagen extraída de Amazon.
+                        </figcaption>
+                    </figure>
                     <div class="card-body">
                         <h5 class="card-title">Ver nuestro catálogo</h5>
                         <p class="card-text">Encuentra los mejores productos de nuestro catálogo y utiliza filtros para
@@ -133,19 +145,19 @@
             </div>
 
             <div class="d-flex justify-content-center contendorRedes">
-                <a href="#" class="mx-3" target="_blank">
+                <a href="https://www.facebook.com/" class="mx-3" target="_blank">
                     <!-- Icono de Facebook -->
                     <i class="fab fa-facebook-f redes"></i>
                 </a>
-                <a href="#" class="mx-3" target="_blank">
+                <a href="https://x.com/?lang=es" class="mx-3" target="_blank">
                     <!-- Icono de Twitter -->
                     <i class="fab fa-twitter redes"></i>
                 </a>
-                <a href="#" class="mx-3" target="_blank">
+                <a href="https://www.instagram.com/" class="mx-3" target="_blank">
                     <!-- Icono de Instagram -->
                     <i class="fab fa-instagram redes"></i>
                 </a>
-                <a href="#" class="mx-3" target="_blank">
+                <a href="https://es.linkedin.com/" class="mx-3" target="_blank">
                     <!-- Icono de LinkedIn -->
                     <i class="fab fa-linkedin-in redes"></i>
                 </a>
@@ -165,11 +177,13 @@
             <form class="miFormContacto">
                 <div class="form-group m-3 hijo">
                     <label class="mb-3" for="name">Nombre</label>
-                    <input class="" type="text" class="form-control" id="name" placeholder="Nombre">
+                    <input class="" type="text" class="form-control" id="name" placeholder="Nombre" tabindex="1"
+                        required>
                 </div>
                 <div class="form-group m-3 hijo">
                     <label class="mb-3" for="email">Correo Electrónico</label>
-                    <input class="" type="email" class="form-control" id="email" placeholder="Email">
+                    <input class="" type="email" class="form-control" id="email" placeholder="Email" tabindex="2"
+                        required>
                 </div>
                 <div class="form-group m-3 hijo">
                     <label class="mb-3" for="message">Mensaje</label>
@@ -180,36 +194,295 @@
         </div>
     </div>
     <!-- FIN DEL CONTACTO RÁPIDO -->
+    <!-- MAPA DE NAVEGACIÓN -->
+    <div class="container mt-4">
 
-    <!-- Para mi tienda online se me han ocurrido diferentes páginas, debido a que es un proyecto que no debe ser muy grande. ¿Puedes decirme si son suficientes o ssi por el contrario añadirías alguna más? Las páginas que voy a poner son "inicio" donde aterrizarán los usuarios y verán lo que hemos estado construyendo hasta ahora, "productos" donde incluiré las cards de los productos y una barra de filtros para poder filtrar los resultados, "carrito" donde el usuario podrá ver lo que ha añadido a su carrito, "login/registrarse" donde pondré 2 formularios diferentes adecuados a cada uso, "contacto" donde habrá información de la empresa tipo "quienes somos" y un formulario para que nos envíen sugerencias o cosas así. ¿Se teeocurre algo más, teniendo en cuenta que el proyecto no debe ser muy grande? -->
+        <div class="col-12 textos mb-2">
+            <h2>Mapa de Navegación</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body mapa">
+                        <h5 class="card-title">Inicio</h5>
+                        <p class="card-text">Ésta es la página principal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body mapa">
+                        <h5 class="card-title">Productos</h5>
+                        <p class="card-text">Aquí podrás ver el catálogo disponible. Podrás ver una vista detallada de
+                            cada producto.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Detalles del Producto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body mapa">
+                        <h5 class="card-title">Carrito</h5>
+                        <p class="card-text">Comprueba tu carrito por si falta algo. Podrás ver una vista detallada de
+                            cada producto.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Detalles del Producto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body mapa">
+                        <h5 class="card-title">Login</h5>
+                        <p class="card-text">Inicia sesión o regístrate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body mapa">
+                        <h5 class="card-title">Contacto</h5>
+                        <p class="card-text">Envía tus sugerencias, comunícate con soporte, atención al cliente y más.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN DEL MAPA DE NAVEGACIÓN -->
+            <!-- MULTIMEDIA -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <video controls aria-describedby="video-transcripcion" class="w-100">
+                            <source src="assets/multimedia/WIN_20250206_18_28_20_Pro.mp4" type="video/mp4">
+                            Este navegador no soporta el uso de vídeos.
+                        </video>
+                        <div id="video-transcripcion" class="textos" class="mt-3">
+                            <h2>Transcripción del vídeo</h2>
+                            <p>¡Bienvenido a EBOX! Tu tienda online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <audio controls aria-describedby="audio-transcripcion" class="w-100">
+                            <source src="assets/multimedia/WIN_20250206_18_28_20_Pro-copia.mp3" type="audio/mp3">
+                            Este navegador no soporta el uso de audios.
+                        </audio>
+                        <div id="audio-transcripcion" class="textos" class="mt-3">
+                            <h2>Transcripción del audio</h2>
+                            <p>¡Bienvenido a EBOX! Tu tienda online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- 
-    1: Página de Detalles del Producto:
+            <!-- FIN DE MULTIMEDIA -->
+            <!-- TABLA ACCESIBILIDAD -->
+            <div class="container mt-5">
+                <div class="col-12 textos mb-2">
+                    <h2>Lista de Verificación de Accesibilidad</h2>
+                </div>
+                <table class="table table-dark table-striped table-bordered tablaAccesibilidad">
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">En general (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Incluir un equivalente de texto a los elementos que no son de texto</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Transmitir sin color la información con color</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Identificar los cambios en el lenguaje natural</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Organizar los documentos de tal manera que puedan ser leídos sin CSS
+                                aplicado</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Actualizar el contenido dinámico</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Evitar parpadeos</td>
+                            <td headers="th2">X</td>
+                            <td headers="th3"></td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Lenguaje sencillo y apropiado</td>
+                            <td headers="th2">X</td>
+                            <td headers="th3"></td>
+                            <td headers="th4"></td>
+                        </tr>
 
-Cuando los usuarios hagan clic en un producto en la página de "Productos", podrían ser llevados a una página de detalles que incluya más información sobre el producto, imágenes adicionales, reseñas de clientes, y la opción de añadir al carrito.
-    -->
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si utilizas imágenes y mapas de imágenes (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Proporcionar enlaces para cada región de un mapa de imágenes</td>
+                            <td headers="th2"></td>
+                            <td headers="th3"></td>
+                            <td headers="th4">X</td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Proporcionar mapas de imágenes del lado cliente en lugar del lado servidor</td>
+                            <td headers="th2"></td>
+                            <td headers="th3"></td>
+                            <td headers="th4">X</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si utilizas tablas (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Identificar los encabezdos de las tablas</td>
+                            <td headers="th2">X</td>
+                            <td headers="th3"></td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Utilizar marcado para las tablas con encabezados de fila y/o columna</td>
+                            <td headers="th2">X</td>
+                            <td headers="th3"></td>
+                            <td headers="th4"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si usas marcos (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Poner títulos a cada cuadro</td>
+                            <td headers="th2">X</td>
+                            <td headers="th3"></td>
+                            <td headers="th4"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si utilizas applets y scripts (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Funciona la página sin applets o scripts</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si utilizas multimedia (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Proporcionar una descripción auditiva de la información visual</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                        <tr>
+                            <td headers="th1">Sincronizar alternativas equivalentes</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th id="th1" scope="col">Y si todo lo demás falla (Prioridad 1)</th>
+                            <th id="th2" scope="col">Sí</th>
+                            <th id="th3" scope="col">No</th>
+                            <th id="th4" scope="col">N/A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="th1">Si no puedes crear una página totalmente accesible proprciona una alternativa con tecnologías W3C</td>
+                            <td headers="th2"></td>
+                            <td headers="th3">X</td>
+                            <td headers="th4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <!-- 2:Página de Perfil del Usuario:
-
-Una sección donde los usuarios registrados puedan ver y actualizar su información personal, historial de pedidos, y preferencias. -->
-
-<!-- 
-- AÑADIR:
-· Quizás un OFFCANVAS para desplazarte por el documento actual.
-· Migas de pan.
--->
-
-<!-- FOOTER -->
-<footer class="miFooter" style="text-align: center; margin-top: 50px; ">
-    <p>
-      Este contenido está licenciado bajo una 
-      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-        Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional
-      </a>.
-    </p>
-    <p><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://localhost/EBOX">E-BOX</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://localhost/miPerfil">Joaquín</a> bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p></p>
-  </footer>
-  <!-- FIN DEL FOOTER -->
+            <!-- FIN DE LA TABLA DE ACCESIBILIDAD -->
+            <!-- FOOTER -->
+            <footer class="miFooter" style="text-align: center; margin-top: 50px; ">
+                <p>
+                    Este contenido está licenciado bajo una
+                    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                        Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional
+                    </a>.
+                </p>
+                <p>
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+                        property="dct:title" rel="cc:attributionURL" href="index.html">E-BOX</a> por <a
+                        rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                        href="http://localhost/miPerfil">Joaquín</a> bajo licencia <a
+                        href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a>
+                </p>
+                </p>
+            </footer>
+            <!-- FIN DEL FOOTER -->
 </body>
 
 </html>

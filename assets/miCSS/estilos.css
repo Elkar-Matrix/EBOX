@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 56px;
@@ -19,49 +20,71 @@ body {
 .carousel-item {
     max-height: calc(100vh - 56px);
 }
-.textos{
+
+.textos {
     text-align: center;
     color: darkorange;
     text-shadow: 0px 0px 4px darkorange;
     background-color: blueviolet;
-    margin: 20px auto;
-    height: 70px;
+    margin: 36px auto;
+    height: 100px;
     padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.contendorRedes{
+
+.contendorRedes {
     background-color: black;
     width: 80%;
     margin: 5px auto;
     padding: 20px;
     border-radius: 15px;
 }
-.redes{
+
+.redes {
     color: darkorange;
     font-size: 30px;
 }
-.miFooter{
+
+.miFooter {
     background-color: black;
     color: white;
     padding: 20px;
     font-size: 20px;
 }
-.miFormContacto{
+
+.miFormContacto,
+.miFormContactoLogin,
+.miFormContactoRegistro,
+.miFormContactoContacto {
     background-color: black;
     padding: 20px;
     color: darkorange;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 15px;
 }
 
-.miFormContacto .hijo{
+.miFormContactoLogin,
+.miFormContactoRegistro,
+.miFormContactoContacto {
+    flex-direction: column;
+}
+
+.miFormContacto .hijo {
     display: flex;
     flex-direction: column;
     flex-basis: 300px;
     flex-grow: 1;
 }
 
-.miFormContacto input{
+.miFormContacto input,
+.miFormContactoLogin input,
+.miFormContactoRegistro input,
+.miFormContactoContacto input {
     height: 50px;
     border: 0;
     outline: 0;
@@ -74,7 +97,13 @@ body {
     border-radius: 15px;
 }
 
-.miFormContacto textarea{
+.miFormContacto textarea,
+.miFormContacto textarea:focus,
+.miFormContactoLogin input:focus,
+.miFormContactoRegistro input:focus,
+.miFormContactoContacto textarea,
+.miFormContactoContacto textarea:focus,
+.miFormContactoContacto input:focus{
     border: 0;
     outline: 0;
     color: darkorange;
@@ -83,9 +112,15 @@ body {
     font-size: 20px;
     background-color: rgb(43, 43, 43);
     border-radius: 15px;
+    resize: none;
 }
 
-.miFormContacto input::placeholder, .miFormContacto textarea::placeholder{
+.miFormContacto input::placeholder,
+.miFormContacto textarea::placeholder,
+.miFormContactoLogin input::placeholder,
+.miFormContactoRegistro input::placeholder,
+.miFormContactoContacto input::placeholder,
+.miFormContactoContacto textarea::placeholder{
     color: darkorange;
     text-shadow: 0px 0px 5px darkorange;
     padding: 20px;
@@ -93,7 +128,10 @@ body {
     font-size: 20px;
 }
 
-.miFormContacto button{
+.miFormContacto button,
+.miFormContactoLogin button,
+.miFormContactoRegistro button,
+.miFormContactoContacto button {
     background-color: rgb(60, 0, 116);
     color: darkorange;
     text-shadow: 0px 0px 5px darkorange;
@@ -101,11 +139,205 @@ body {
     font-weight: bolder;
     font-size: 20px;
     transition: all ease-in-out 1s;
-
+    border: 0;
 }
 
-.miFormContacto button:hover{
+.miFormContacto button:hover,
+.miFormContactoLogin button:hover,
+.miFormContactoRegistro button:hover,
+.miFormContactoContacto button:hover {
     background-color: rgb(132, 0, 255);
     box-shadow: 0px 0px 13px 5px white inset;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.form-check {
+    background-color: rgb(60, 0, 116);
+    color: darkorange;
+    text-shadow: 0px 0px 5px darkorange;
+    border-radius: 10px;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 10px;
+    width: auto;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.tarjeta {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    color: darkorange;
+    text-shadow: 0px 0px 5px darkorange;
+    justify-content: center;
+}
+
+.tarjeta img {
+    width: 10%;
+    flex-basis: 200px;
+    border-radius: 15px;
+}
+
+.datosProducto {
+    flex-basis: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 0px 0px 4px darkorange;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    flex-basis: 200px;
+    justify-content: center;
+}
+
+.cantidad input {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.detalles {
+    border-radius: 15px;
+    color: darkorange;
+    text-shadow: 0px 0px 4px darkorange;
+    background-color: blueviolet;
+    margin-top: 80px;
+}
+
+.detallesPrimeraFila {
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin: 0; */
+}
+
+.detallesProducto {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detallesImagen {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.carritoContenedor {
+    padding-top: 5px;
+}
+
+.mapa {
+    background-color: black;
+    background: linear-gradient(to right, black 0%, rgb(66, 66, 66) 99%);
+    border-radius: 10px;
+    color: white;
+}
+
+.contenedorLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    height: calc(100vh - 56px);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.contenedorRegistro {
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
+
+}
+
+.contenedorContacto{
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 0px 0px 4px darkorange;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    text-shadow: 0px 0px 4px rgb(0, 255, 0);
+}
+
+a:focus {
+    text-decoration: underline;
+    color: rgb(57, 0, 133);
+    text-shadow: 0px 0px 4px rgb(57, 0, 133);       
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(208, 255, 0);
+    text-shadow: 0px 0px 4px rgb(208, 255, 0);
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+#th1{
+    width: 85%;
+    color: darkorange;
+    text-shadow: 0px 0px 4px darkorange;
+}
+#th2, #th3, #th4{
+    width: 5%;
+    color: darkorange;
+    text-shadow: 0px 0px 4px darkorange;
+}
+
+/* MEDIA QUERIES: */
+@media (min-width: 997px) {
+    .tarjeta {
+        justify-content: space-between;
+    }
 }

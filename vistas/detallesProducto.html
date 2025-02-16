@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-BOX: LOGIN</title>
+    <title>E-BOX</title>
     <link rel="shortcut icon" href="../assets/imagenes/EBOXGIMP.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <script defer src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -38,13 +38,13 @@
                             Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./carrito.html">
+                        <a class="nav-link active" aria-current="page" href="./carrito.html">
                             <i class="fa-solid fa-cart-shopping"></i>
                             Carrito <span class="badge text-bg-danger">4</span></a>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./login.html">
+                        <a class="nav-link" href="./login.html">
                             <i class="fa-solid fa-right-to-bracket"></i>
                             Login</a>
                     </li>
@@ -63,36 +63,34 @@
         </div>
     </nav>
     <!-- FIN DEL HEADER -->
-    <!-- FORMULARIO LOGIN -->
-    <div class="container contenedorLogin">
-
-        <div class="col-12 textos mb-2">
-            <h2>Login</h2>
+    <!-- DETALLES DEL PRODUCTO: -->
+    <div class="container detalles">
+        <div class="row detallesPrimeraFila">
+            <div class="col-md-12 text-center textos">
+                <h2>Detalle del Producto</h2>
+            </div>
         </div>
-        <form class="miFormContactoLogin">
-            <div class="mb-3 row hijo">
-                <label for="email" class="col-form-label col-12 col-md-4">Correo Electrónico</label>
-                <div class="col-12 col-md-8">
-                    <input type="email" class="form-control" id="email" required tabindex="1">
+        <div class="row product-details detallesProducto">
+            <div class="col-md-6">
+                <img src="../assets/imagenes/saitama.jpg" alt="Producto" class="detallesImagen">
+            </div>
+            <div class="col-md-6 mt-3">
+                <h3>Nombre del Producto</h3>
+                <p>Categoría: Electrónica</p>
+                <p>Descripción detallada del producto. Aquí se puede incluir toda la información relevante
+                    sobre el producto, sus características, especificaciones y cualquier otro detalle importante para el
+                    cliente.</p>
+                <h4>Precio: $150.00</h4>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-lg">Añadir al Carrito</button>
+                    <a href="./productos.html" class="btn btn-secondary btn-lg">Volver a la Lista de Productos</a>
                 </div>
             </div>
-            <div class="mb-3 row hijo">
-                <label for="password" class="col-form-label col-12 col-md-4">Contraseña</label>
-                <div class="col-12 col-md-8">
-                    <input type="password" class="form-control" id="password" required tabindex="2">
-                </div>
-            </div>
-            <div class="d-grid gap-2 hijo">
-                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
-            </div>
-            <div class="text-center mt-3 hijo">
-                <a href="registro.html">¿No tienes cuenta? Regístrate!</a>
-            </div>
-        </form>
+        </div>
     </div>
-    <!-- FIN DEL FORMULARIO LOGIN -->
+    <!-- FIN DE DETALLES DEL PRODUCTO -->
     <!-- FOOTER -->
-    <footer class="miFooter fixed-bottom" style="text-align: center; margin-top: 50px; ">
+    <footer class="miFooter" style="text-align: center; margin-top: 50px; ">
         <p>
             Este contenido está licenciado bajo una
             <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
